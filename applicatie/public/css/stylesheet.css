@@ -1,0 +1,33 @@
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    width:40%;
+    
+  }
+
+  p { color: red; }
+  body { background-color: #eee; }
+
+  table{
+    display: inline-block;
+    position: absolute;
+    background:gray;
+    
+
+  }
+  th,td{
+    padding: 15px;
+    margin:1px;
+    border: 1px solid black;
+  }
+  tr{
+    text-align: center;
+    
+  }
+  th{
+    text-align: left;
+  }
+  tr:hover {background-color: #f5f5f5;}
+  
