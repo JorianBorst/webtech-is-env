@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-Les 4 LP
-Les 4 VB
-Les 5 VB
-Les 5 LP
+<a href="http://localhost:8000/les4.php">Les 4 LP</a> 
+<a href="http://localhost:8000/les4Voorbereiding.php">Les 4 VB</a> 
+<a href="http://localhost:8000/les5voorbereiding.php">Les 5 VB</a> 
+<a href="http://localhost:8000/les5.php"> Les 5 LP</a> 
     
 </body>
 </html>

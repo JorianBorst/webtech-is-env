@@ -14,7 +14,7 @@ $plaats = 'Arnhem';
 $html = "$naam<br>$adres<br>$postcode $plaats";
 $geslacht = (string)"Man"; // string
 $isStudent = (bool)True; // Boolean
-$leeftijd = (int)26; // int
+$leeftijd = 26; // int
 
 
 function printOutStringAndLength($input)
@@ -24,7 +24,6 @@ function printOutStringAndLength($input)
 
 function last3Characters($string)
 {
-  echo "<br>";
   echo substr($string, -3);
 }
 

@@ -85,7 +85,7 @@ $films = [
   echo "<h2>Opdracht 2: Array Slice </h2>";
 
 
-  $output = array_slice($films,-2,2,true);
+  $output = array_slice($films,-2);
   foreach($output as $film){
       echo "De titel: ".$film['title'];
       echo "<br> ";
@@ -97,14 +97,7 @@ $films = [
 
 <?php
 echo"<h2>Opdracht 3</h2>";
-function zetInTabel1($array){
-   
 
-    foreach($array as $filmdata){
-       // kijken of deze nodig is als je hem wilt voeden met arrays van arrays
-
-    }
-}
 function zetInTabel($array){
     $html ="";
     $html .= "<table>
@@ -116,25 +109,45 @@ function zetInTabel($array){
     <th>Poster</th>
     </tr>
     <tr>";
-    foreach ($array as $array){
-        //ZetInTabel($array);
-        $html .="  <td>".$film['title']."</td>";
-        $html .=" <td>".strval($film['year'])."</td>";
-        $html .=" <td>".$film['director']."</td>";
+    // foreach ($array as $film){
+    //     //ZetInTabel($array);
+        $html .="<td>".$array['title']."</td>";
+        $html .="<td>".strval($array['year'])."</td>";
+        $html .="<td>".$array['director']."</td>";
         $html .="<td>";
         foreach($array['stars'] as $star){
             $html .= $star;
             $html .=" ";
         }
         $html .= "</td>";
-        $html .=" <td><img src='".$film['imageURL']."'></td>";
-       echo"";
-    }
+        $html .="<td><img src='".$array['imageURL']."'></td>";
+      
+    
     $html .= "</table>";
+    return $html;
 }
-//zetInTabel($film);
 
+for ($i = 0; $i <count($films);$i++){
+  echo zetInTabel($films[$i]);
+}
+
+// Opdracht 4
+
+
+require_once $_SERVER['DOCUMENT_ROOT'].'/src/components.php';
+$pageData = [
+  'title' => 'Eerste pagina met herbruikbare blokken',
+  'name' => 'Home',
+]
 ?>
+
+    <?=logo($pageData['name']);?>
+
+
+
+
+
+
 
 
 

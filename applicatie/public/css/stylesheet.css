@@ -11,8 +11,8 @@ pre code {
   body { background-color: #eee; }
 
   table{
-    display: inline-block;
-    position: absolute;
+    display: block;
+    
     background:gray;
     
 

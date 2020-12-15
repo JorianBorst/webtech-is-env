@@ -22,8 +22,8 @@
     <?php
     function functie1($input)
     {
-        echo "<h1>" . $input . "</h1>";
-        echo "<em>" . strlen($input) . "</em>";
+        echo "<h1>" . $input ."<em>" . strlen($input) . "</em>". "</h1>";
+      
     }
     functie1("hallo");
     ?>
